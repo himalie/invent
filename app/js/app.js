@@ -26,8 +26,8 @@ angular.module('myApp', ['ngRoute'])
       }
     });*/
 
-    /*$routeProvider.when("/home", {template: "templates/home.html" })
-    .otherwise({redirectTo: "/index", template : "index.html"});*/
+    $routeProvider.when("/home", {template: "templates/home.html" })
+    .otherwise({redirectTo: "/index", template : "index.html"});
      //
   // For any unmatched url, redirect to /state1
   //$urlRouterProvider.otherwise("app/index");
