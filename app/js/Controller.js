@@ -1,7 +1,13 @@
-angular.module('myApp', [])
+// create the controller and inject Angular's $scope
+    inventApp.controller('mainController', function($scope) {
+        // create a message to display in our view
+        $scope.message = 'Everyone come and see how good I look!';
+    });
 
-.controller('MyController', function($scope) {
-  $scope.person = {
-    name: "Ari Lernerrrr"
-  };
-});
+    inventApp.controller('aboutController', function($scope) {
+        $scope.message = 'Look! I am an about page.';
+    });
+
+    inventApp.controller('contactController', function($scope) {
+        $scope.message = 'Contact us! JK. This is just a demo.';
+    });

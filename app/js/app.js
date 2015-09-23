@@ -1,34 +1,28 @@
+// create the module and name it inventApp
+        // also include ngRoute for all our routing needs
+    var inventApp = angular.module('inventApp', ['ngRoute']);
 
-angular.module('myApp', ['ngRoute'])
+    // configure our routes
+    inventApp.config(function($routeProvider) {
+        $routeProvider
 
-.run(function($rootScope) {
-  $rootScope.name = "Ari Lerner";
-})
+            // route for the home page
+            .when('/', {
+                templateUrl : 'templates/home.html',
+                controller  : 'mainController'
+            })
 
-.config(function($stateProvider, $RouterProvider, $urlRouterProvider) {
- 
-  //
-  // Now set up the states
-  /*$stateProvider
-    .state('app', {
-      url: "/app",
-      abstract: true,
-      templateUrl: "index.html",
-      controller: 'MyController'
-    })
-    .state('app/home', {
-      url: "/home",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/home.html",
-          controller: 'HomeController'
-        }
-      }
-    });*/
+            // route for the about page
+            .when('/about', {
+                templateUrl : 'templates/about.html',
+                controller  : 'aboutController'
+            })
 
-    $routeProvider.when("/home", {template: "templates/home.html" })
-    .otherwise({redirectTo: "/index", template : "index.html"});
-     //
-  // For any unmatched url, redirect to /state1
-  //$urlRouterProvider.otherwise("app/index");
-});
+            // route for the contact page
+            .when('/contact', {
+                templateUrl : 'templates/contact.html',
+                controller  : 'contactController'
+            });
+    });
+
+    
