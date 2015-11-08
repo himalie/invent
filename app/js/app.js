@@ -29,6 +29,16 @@
             .when('/contact', {
                 templateUrl : 'templates/contact.html',
                 controller  : 'contactController'
+            })
+
+            .when('/partsummery', {
+                templateUrl : 'templates/partsummery.html',
+                controller  : 'partsController'
+            })
+
+            .when('/ReceiveParts', {
+                templateUrl : 'templates/ReceiveParts.html',
+                controller  : 'partsController'
             });
     });
 

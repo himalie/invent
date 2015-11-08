@@ -14,7 +14,7 @@ angular.module('invent.controllers', [])
               error(function (data, status, headers, config) {
                 InventoryPart.allParts = null;
                 //$scope.error = data.data;
-                //console.log('error: ' + data);
+                console.log('error: ' + data);
       });
     };
 

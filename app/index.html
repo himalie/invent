@@ -37,27 +37,43 @@
         
 
         <!-- Navigation -->
-        <nav>            
-            
+        <nav>          
           <header>
             <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">Inventory Management System</a>
+                    <a class="navbar-brand" href="#/">Inventory Management System</a>
                 </div>
 
-                <ul class="nav navbar-nav navbar-right">
+                
+                <ul class="nav navbar-top-links navbar-right">
+                  <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#/">
+                            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
                     <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>                    
                 </ul>
             </div>
             </nav>
-        </header>
+          </header>
 
-
-            <!-- /.navbar-top-links -->
-
+            <!-- /.navbar-top-links  Menu Items-->
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
@@ -76,10 +92,10 @@
                             <a href="#dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#/"><i class="fa fa-dashboard fa-fw"></i> Receive Parts</a>
+                            <a href="#ReceiveParts"><i class="fa fa-dashboard fa-fw"></i> Receive Parts</a>
                         </li>
                         <li>
-                            <a href="#/"><i class="fa fa-dashboard fa-fw"></i> Part Summery</a>
+                            <a href="#partsummery"><i class="fa fa-dashboard fa-fw"></i> Part Summery</a>
                         </li>
                         <li>
                             <a href="#/"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
